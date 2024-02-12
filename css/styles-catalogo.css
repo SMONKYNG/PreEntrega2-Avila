@@ -1,0 +1,85 @@
+@import url(styles-main.css);
+
+/* FOTO RECIEVER CATALOGO*/
+.landingCatalogo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    margin-bottom: 150px;
+}
+
+    .fotoInfoCatalogo{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fotoInfoCatalogo img{
+    width: 90vw;
+    }
+
+    .fotoInfoCatalogo a{
+        text-decoration: none;
+        color: #80B8B4 ;
+    }
+
+    .textoInfoCatalogo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+.catalogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px ;
+}
+    .menuCatalogo{
+        border: 1.5px solid #000000;
+        border-radius: 10px;
+        height:fit-content;
+        width: 20vw;
+        padding: 10px 10px 20px 15px;
+    }
+    .lentesCatalogo{
+        width:70vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .lentesCatalogo img{
+        height: 250px;
+        border: 1.5px solid #000000;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .botonesCatalogo{
+        display: flex;
+        padding: 0 20% 0 20%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn{
+        font-family: "Kanit", sans-serif;
+        width: 120px;
+        height: 40px;
+        padding: 10px 10px 30px 10px;
+        font-size: 15px;
+        background-color: #80b8b4;
+        color: #FFFEF4;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px;
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow:  10px 10px 0px 0px #000000;
+    }
+    .btn:hover{
+        background-color: #faeeb1;
+        color: #222222;
+    }

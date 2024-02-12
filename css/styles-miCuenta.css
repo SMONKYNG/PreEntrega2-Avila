@@ -1,0 +1,130 @@
+@import url(styles-main.css);
+
+.sectionProfile{
+    margin: 80px 0 0 30px;
+    padding: 20px 0 0 30px;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .menuProfile{
+        background-color:#D6D6D6;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        padding: 10px 30px 30px 10px;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow:  10px 10px 0px 0px #000000;
+    }
+        .menuProfile img{
+            height: 30px;
+            margin-right: 5px;
+        }
+        .tituloMenuProfile{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: fit-content;
+            padding: 0px 0 0 px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .navMenuProfile{
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            padding: 0 0 0 20px;
+        }
+        .navMenuProfile li{
+            list-style: none;
+        }
+
+        .navMenuProfile a{
+            color: #222222;
+            text-decoration: none;
+        }
+
+        .navMenuProfile a:hover{
+            color: #faeeb1;
+        }
+    .resumeProfile{
+        background-color: #FAEEB1;
+        padding: 30px 60px 60px 60px;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        box-shadow:  10px 10px 0px 0px #000000;
+    }   .nombreResumeProfile{
+            padding: 0x;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: fit-content;
+        }
+            .nombreResumeProfile{
+                font-size: 45px;
+                font-weight: 500;
+                line-height: 0;
+            }
+            .nombreResumeProfile img{
+            height: 120px;
+            margin: 0 20px 0 0;
+            }
+        
+            .resumeProfile table
+            td {
+            border: 1.5px solid #000000;
+            border-radius: 10px;
+
+            width: 70px;
+            }
+            th{
+                background-color: #FAEEB1;
+                font-weight: 400;
+            }
+    .tablasDatosReceta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .tituloTablaDiop{
+            font-size:25px;
+            font-weight: 500;
+            line-height: 0;
+            margin-bottom: 30px;
+        }
+        .tablaDP{
+            margin: 10px;
+        }
+        .botonesReceta{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+    }
+    .btn{
+        font-family: "Kanit", sans-serif;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: #80b8b4;
+        color: #FFFEF4;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px;
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow:  5px 5px 0px 0px #000000;
+        }
+        .btn:hover{
+            background-color: #625378;
+            color: #FFFFFF;
+        }
