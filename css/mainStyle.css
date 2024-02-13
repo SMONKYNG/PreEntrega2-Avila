@@ -66,6 +66,10 @@ body{
         width: 100%;
         border-bottom: 2px solid #000000;
     }
+        .logoHeader{
+            display: flex;
+            justify-content: center;
+        }
         .logoHeader img{
         margin-top: 5px;
         height: 2rem;
@@ -163,11 +167,10 @@ footer{
 
     .bannerMenu{
         position:static;
-        background-color: #c28e0b;
         display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        justify-content:space-between;
+        justify-content:center;
         align-items: center;
         height: 70px;
         padding-inline-start: 10px;
@@ -175,11 +178,21 @@ footer{
         top:25px;
         width: 440px;
         border-bottom: 2px solid #000000;}
+        .headerMenu{
+            display: flex;
+            justify-content: center;
+        }
+        .headerMenu li{
+            font-size: 0.5rem;
+        }
         
     .bannerOferta{
         height: 15px;
         width: 100%;
         font-size: 8px;
         }
+        .logoHeader img{
+            margin-top: 5px;
+            height: 1rem;}
     
 }

@@ -1,4 +1,5 @@
-@import url(styles-main.css);
+@import url(mainStyle.css);
+@import url(botones.css);
 
     .sectionPregFrec{ 
         background-color: #FFFFFF;
