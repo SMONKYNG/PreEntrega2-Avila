@@ -56,6 +56,7 @@ body{
         background-color: #80b8b4;
         display:flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content:space-between;
         align-items: center;
         height: 50px;
@@ -162,7 +163,19 @@ footer{
 
     .bannerMenu{
         position:static;
-        background-color: #d0ff00;}
+        background-color: #c28e0b;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content:space-between;
+        align-items: center;
+        height: 70px;
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
+        top:25px;
+        width: 440px;
+        border-bottom: 2px solid #000000;}
+        
     .bannerOferta{
         height: 15px;
         width: 100%;
