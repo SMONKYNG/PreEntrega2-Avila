@@ -1,5 +1,8 @@
 @import url(mainStyle.css);
 @import url(botones.css);
+@import url(footer.css);
+@import url(header.css);
+
 /* FOTO RECIEVER CATALOGO*/
 .landingCatalogo{
     position: relative;
@@ -7,6 +10,7 @@
     justify-content: center;
     top: 100px;
     margin-bottom: 150px;
+    font-size: 1rem;
 }
 
     .fotoInfoCatalogo{
@@ -17,7 +21,7 @@
         align-items: center;
     }
     .fotoInfoCatalogo img{
-    width: 90vw;
+    width: 90%;
     }
 
     .fotoInfoCatalogo a{
@@ -34,6 +38,7 @@
 .catalogo{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
     margin-bottom: 100px ;
 }
@@ -64,22 +69,23 @@
         justify-content: space-between;
         align-items: center;
     }
-    .btn{
-        font-family: "Kanit", sans-serif;
-        width: 120px;
-        height: 40px;
-        padding: 10px 10px 30px 10px;
-        font-size: 15px;
-        background-color: #80b8b4;
-        color: #FFFEF4;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        border-radius: 10px;
-        /* offset-x | offset-y | blur-radius | spread-radius | color */
-        box-shadow:  10px 10px 0px 0px #000000;
+    .boton01 {
+        height: 30px;
     }
-    .btn:hover{
-        background-color: #faeeb1;
-        color: #222222;
+
+    @media(max-width: 480px){
+        .botonesCatalogo{
+            display: flex;
+            padding: 0 0 0 0;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;}
+
+            .boton01 {
+                width: 110px;
+                height: 20px;
+                font-size: 1rem;
+                }
+            }
+        
     }

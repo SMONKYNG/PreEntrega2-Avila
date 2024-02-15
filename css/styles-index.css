@@ -1,5 +1,4 @@
 @import url(mainStyle.css);
-@import url(botones.css);
 
 .fotoVeMasAlla{
     position: relative;
@@ -7,7 +6,7 @@
 }
 .fotoVeMasAlla img{
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
 }
 
 /*COTIZACION SECTION INICIO*/
@@ -22,20 +21,22 @@
     justify-content: space-evenly;
     gap: 50px
 }
-    #cajaTextosInicio{
-       font-size: 1rem;     
+    .cajaTextosInicio{
+        font-size: 1.5rem;     
     }
-    #botonesCotizacion{
-        display: flex;
+    .botonesCotizacion{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
         width: 100%;
-        flex-direction: column;
         justify-self: center;
         justify-content: space-between;
         align-items: center;}
     .boton01{
-        height: 20px;
-        width: 130px;
-        font-size: 15px;
+        height: 40px;
+        width: 180px;
+        font-size: 1.5rem;
+        padding: 5px;
     }
 
 /*DESTACADOS*/
@@ -71,12 +72,11 @@
     
     
     .carruselDestacados {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         padding: 0 30px 0 30px;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 60px;
         align-items: center;
-        justify-content:center;
+        justify-content:space-around;
         width: 100%;
         margin: 60px 0 0 0;
         z-index: -1;
@@ -96,8 +96,6 @@
         }
 
 /* VALORACIONES */
-
-
 .valoracionesSection{
     width: 100%;
     display: flex;
@@ -106,7 +104,7 @@
     align-items: center;
     padding: 10px 0 30px 0;
     margin: 110px 0 0 0;
-}
+    }
     .tituloValoraciones{
         display: flex;
         justify-content:center;
@@ -153,7 +151,7 @@
             border-radius: 10px;
             border: 1px solid #000000;
             width: 220px;
-            font-size: 15px;
+            font-size: 1rem;
             padding: 10px;
             overflow:hidden;
             text-align:left;            
@@ -163,37 +161,40 @@
         }
 
 
-        @media (max-width: 480px){
+@media(max-width: 480px){
 
-            .carruselDestacados {
-                display: grid;
-                padding: 0 30px 0 30px;
-                grid-template-rows: 1fr 1fr 1fr;
-                column-gap: 30px;
-                align-items: center;
-                justify-content:center;
-                width: 100%;
-                margin: 60px 0 0 0;
-                z-index: -1;
-            }
-            .seccionCotizacion{
-                height: 300px;
-                margin: 30px 0 30px 0;
-                padding: 0 30px 0 30px;
-                display: grid;
-                grid-template-columns:  1fr;
-                grid-template-rows: 1fr 1fr;
-                justify-content: space-evenly;
-                gap: 50px }
-            .textoDestacados{
-                font-size: 1pt;
-            }
-            #botonesCotizacion{
-                display: flex;
-                width: fit-content;
-                flex-direction: row;
-                justify-self: center;
-                justify-content: space-between;
-                align-items: center;}
-        
-        }
+    .seccionCotizacion{
+        height: fit-content;
+        margin: 30px 0 30px 0;
+        padding: 0 30px 0 30px;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-evenly;
+        gap: 50px }
+
+    .botonesCotizacion{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-self: center;
+        justify-content: space-between;
+        align-items: center;} 
+
+    .destacadosInicio{
+        width: 100%;
+        height: fit-content;
+        margin:110px 0 0 0 ;
+        padding: 0 0 0 0 ;}
+    .carruselDestacados {
+        display: flex;
+        flex-direction: column;        padding: 0 30px 0 30px;
+        align-items: center;
+        justify-content:center; 
+        width: 100%;
+        margin: 60px 0 0 0;
+        z-index: -1;    }
+   
+    
+   
+}

@@ -1,0 +1,123 @@
+/*HEADER*/
+.header{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 4;
+    height: 75px;
+    width: 100%;
+}
+
+.main{
+    width: 100%;
+}
+
+    .bannerOferta{
+        position: static;
+        background-color: #000000;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        top: 0px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 12px;
+        width: 100%;
+        }
+      
+    .navBar{
+    position:static;
+    background-color: #80b8b4;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    height: 50px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    top:25px;
+    width: 100%;
+    border-bottom: 2px solid #000000;
+    }
+        .logoHeader{
+            display: flex;
+            justify-content: center;
+        }
+        .logoHeader img{
+        margin-top: 5px;
+        height: 2rem;
+        }
+    
+        .headerMenu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .headerMenu li{
+            border-right: 1px solid #222222;
+            list-style:none;
+            float: left;
+            font-size: 1rem;
+            font-weight: 600;
+            padding-right: 10px;
+            padding-left: 10px;
+            
+        }
+        
+        .headerMenu li:last-child {
+            border-right:none;
+            padding-right: 0px;
+        }
+        .currentPage{
+            border-bottom: 1px solid}
+        .iconoCarrito img{
+            height: 15px;        }
+        .iconoAyuda IMG{
+            height: 18px;
+            padding-top: 2px;        }
+        .headerMenu a {
+            color: #222222;
+            text-decoration: none;        }
+
+a:hover {
+    color: #FFFEF4; }
+
+
+
+@media (max-width: 480px){
+
+    .navBar{
+        position:static;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content:center;
+        align-items: center;
+        height: fit-content;
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
+        top:25px;
+        width: 440px;
+        border-bottom: 2px solid #000000;}
+        .headerMenu{
+            display: flex;
+            justify-content: center;
+        }
+        .headerMenu li{
+            font-size: 0.5rem;
+        }
+        
+    .bannerOferta{
+        height: 15px;
+        width: 100%;
+        font-size: 0.5rem;
+        }
+        .logoHeader img{
+            margin: 5px 0 5px 0;
+            height: 1rem;}
+    
+}
